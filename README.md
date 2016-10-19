@@ -1,3 +1,7 @@
+**This is a fork of the original repo so that we can add some extra environment variables required to get libxmlsec1-dev working:
+https://github.com/heroku/heroku-buildpack-python/issues/257#issuecomment-150376915**
+
+
 -![python](https://cloud.githubusercontent.com/assets/51578/13712821/b68a42ce-e793-11e5-96b0-d8eb978137ba.png)
 
 # Heroku Buildpack: Python
