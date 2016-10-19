@@ -119,6 +119,7 @@ export LD_LIBRARY_PATH=/app/.heroku/vendor/lib:$BUILD_DIR/.heroku/vendor/lib:/ap
 export PKG_CONFIG_PATH=/app/.heroku/vendor/lib/pkg-config:$BUILD_DIR/.heroku/vendor/lib/pkg-config:/app/.heroku/python/lib/pkg-config:$PKG_CONFIG_PATH
 
 # Add heroku-buildpack-apt paths. We need this modification to get libxmlsec1-dev to work
+# see: https://github.com/heroku/heroku-buildpack-python/issues/257#issuecomment-150376915
 export PATH=$PATH:/app/.apt/usr/bin
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:/app/.apt/usr/include:/app/.apt/usr/include/xmlsec1
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/app/.apt/usr/include:/app/.apt/usr/include/xmlsec1
